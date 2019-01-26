@@ -1,25 +1,22 @@
 extends Area
 
+var hp = 3
+
+
 func _ready():
 	self.connect("area_entered",self,"on_area_entered")
-
+	add_to_group("destructable_objects")
 
 func _process(delta):
-	var a = 1
-	pass
-	
-	
-func self_destroy():
+		
+	if hp <= 0:
 		var parent =  get_parent()
 		var root = parent.get_parent()
 		root.remove_child(parent)
 		parent.call_deferred("free")
-	
+		
+
 func on_area_entered(object):
-	#change sprite to collectible
-	if object.is_in_group("Player1") or object.is_in_group("Player2"):
-		#object.collect_this_collectible
-		#might actually resolve it in player
-		self_destroy()
-		pass
-	
+	var groups = object.get_groups()
+	if object.is_in_group("bullets"):
+		hp = hp - object.damage

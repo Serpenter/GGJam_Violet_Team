@@ -11,4 +11,4 @@ extends Timer
 func _process(delta):
 
 	if is_stopped():
-		get_tree().change_scene("res://test_playground.tscn")
+		get_tree().change_scene("res://second_test_playground.tscn")

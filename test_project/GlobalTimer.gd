@@ -14,4 +14,5 @@ func _ready():
 #	pass
 
 func _on_timeout():
-	get_tree().change_scene("res://GameplayScene.tscn")
+	#get_tree().change_scene("res://GameplayScene.tscn")
+	pass
