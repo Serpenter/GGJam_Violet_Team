@@ -2,13 +2,13 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/astronaut_B_L_v02-01.jpg-a7745a5f484158273196562d294b5719.s3tc.stex"
-path.etc2="res://.import/astronaut_B_L_v02-01.jpg-a7745a5f484158273196562d294b5719.etc2.stex"
+path.s3tc="res://.import/astronaut_B_L_v02-01.jpg-6d6943c026694fa1d2a657c688a73155.s3tc.stex"
+path.etc2="res://.import/astronaut_B_L_v02-01.jpg-6d6943c026694fa1d2a657c688a73155.etc2.stex"
 
 [deps]
 
-source_file="res://assets/astronaut2/astronaut_B_L_v02-01.jpg"
-dest_files=[ "res://.import/astronaut_B_L_v02-01.jpg-a7745a5f484158273196562d294b5719.s3tc.stex", "res://.import/astronaut_B_L_v02-01.jpg-a7745a5f484158273196562d294b5719.etc2.stex" ]
+source_file="res://assests/astronaut2/astronaut_B_L_v02-01.jpg"
+dest_files=[ "res://.import/astronaut_B_L_v02-01.jpg-6d6943c026694fa1d2a657c688a73155.s3tc.stex", "res://.import/astronaut_B_L_v02-01.jpg-6d6943c026694fa1d2a657c688a73155.etc2.stex" ]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://mesh_grids/cube_mesh_with_collider.meshlib" type="MeshLibrary" id=1]
 [ext_resource path="res://assests/bush/bush_01.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assests/bush/bush_04.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assests/bush/bush_05.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assests/bush/bush_06.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Misc/InvisibleCollidingCube.tscn" type="PackedScene" id=8]
 
 [node name="MainNode" type="Node" index="0"]
 
@@ -66,7 +67,7 @@ cell_scale = 1.0
 collision_layer = 1
 collision_mask = 1
 data = {
-"cells": PoolIntArray( 0, 0, 1073741824, 1, 0, 1073741824, 2, 0, 1073741824, 3, 0, 1073741824, 4, 0, 1073741824, 5, 0, 1073741824, 6, 0, 0, 65529, 0, 1073741824, 65530, 0, 1073741824, 65531, 0, 1073741824, 65532, 0, 1073741824, 65533, 0, 1610612736, 65534, 0, 1073741824, 65535, 0, 1073741824, 0, 1, 1073741824, 1, 1, 1073741824, 2, 1, 1073741824, 3, 1, 1073741824, 4, 1, 1073741824, 5, 1, 1073741824, 6, 1, 1073741824, 65529, 1, 1073741824, 65530, 1, 1073741824, 65531, 1, 1073741824, 65532, 1, 1073741824, 65533, 1, 1073741824, 65534, 1, 1610612736, 65535, 1, 0, 0, 2, 0, 1, 2, 1073741824, 2, 2, 0, 3, 2, 0, 4, 2, 1073741824, 5, 2, 1073741824, 6, 2, 0, 65529, 2, 0, 65530, 2, 536870912, 65531, 2, 0, 65532, 2, 0, 65533, 2, 536870912, 65534, 2, 536870912, 65535, 2, 0, 0, 3, 0, 1, 3, 0, 2, 3, 536870912, 3, 3, 536870912, 4, 3, 536870912, 5, 3, 0, 6, 3, 536870912, 65529, 3, 0, 65530, 3, 0, 65531, 3, 536870912, 65532, 3, 1610612736, 65533, 3, 0, 65534, 3, 0, 65535, 3, 0, 0, 4, 1073741824, 1, 4, 0, 2, 4, 1073741824, 3, 4, 0, 4, 4, 0, 5, 4, 1073741824, 6, 4, 1073741824, 65529, 4, 0, 65530, 4, 0, 65531, 4, 0, 65532, 4, 1073741824, 65533, 4, 536870912, 65534, 4, 1073741824, 65535, 4, 0, 0, 5, 0, 1, 5, 0, 2, 5, 1073741824, 3, 5, 0, 4, 5, 536870912, 5, 5, 536870912, 6, 5, 1073741824, 65529, 5, 0, 65530, 5, 0, 65531, 5, 1073741824, 65532, 5, 0, 65533, 5, 1073741824, 65534, 5, 1073741824, 65535, 5, 536870912, 0, 6, 0, 1, 6, 0, 2, 6, 536870912, 3, 6, 0, 4, 6, 1073741824, 5, 6, 1073741824, 6, 6, 1073741824, 65529, 6, 0, 65530, 6, 0, 65531, 6, 0, 65532, 6, 536870912, 65533, 6, 0, 65534, 6, 1073741824, 65535, 6, 536870912, 0, 65524, 0, 1, 65524, 1073741824, 2, 65524, 0, 3, 65524, 1073741824, 4, 65524, 1610612736, 5, 65524, 536870912, 6, 65524, 0, 7, 65524, 536870912, 65528, 65524, 1610612736, 65529, 65524, 0, 65530, 65524, 0, 65531, 65524, 0, 65532, 65524, 536870912, 65533, 65524, 1073741824, 65534, 65524, 0, 65535, 65524, 536870912, 0, 65525, 1073741824, 1, 65525, 536870912, 2, 65525, 0, 3, 65525, 536870912, 4, 65525, 0, 5, 65525, 536870912, 6, 65525, 536870912, 7, 65525, 536870912, 65528, 65525, 536870912, 65529, 65525, 536870912, 65530, 65525, 0, 65531, 65525, 0, 65532, 65525, 536870912, 65533, 65525, 536870912, 65534, 65525, 0, 65535, 65525, 536870912, 0, 65526, 536870912, 1, 65526, 536870912, 2, 65526, 0, 3, 65526, 1073741824, 4, 65526, 536870912, 5, 65526, 536870912, 6, 65526, 0, 7, 65526, 536870912, 65528, 65526, 0, 65529, 65526, 0, 65530, 65526, 0, 65531, 65526, 0, 65532, 65526, 1073741824, 65533, 65526, 0, 65534, 65526, 536870912, 65535, 65526, 0, 0, 65527, 0, 1, 65527, 536870912, 2, 65527, 1610612736, 3, 65527, 536870912, 4, 65527, 0, 5, 65527, 536870912, 6, 65527, 0, 7, 65527, 0, 65528, 65527, 0, 65529, 65527, 536870912, 65530, 65527, 0, 65531, 65527, 0, 65532, 65527, 1073741824, 65533, 65527, 536870912, 65534, 65527, 536870912, 65535, 65527, 0, 0, 65528, 536870912, 1, 65528, 536870912, 2, 65528, 1073741824, 3, 65528, 0, 4, 65528, 0, 5, 65528, 0, 6, 65528, 0, 7, 65528, 0, 65528, 65528, 0, 65529, 65528, 0, 65530, 65528, 1610612736, 65531, 65528, 536870912, 65532, 65528, 536870912, 65533, 65528, 536870912, 65534, 65528, 1610612736, 65535, 65528, 1073741824, 0, 65529, 0, 1, 65529, 1610612736, 2, 65529, 1073741824, 3, 65529, 0, 4, 65529, 0, 5, 65529, 1073741824, 6, 65529, 536870912, 7, 65529, 1610612736, 65528, 65529, 0, 65529, 65529, 536870912, 65530, 65529, 536870912, 65531, 65529, 1610612736, 65532, 65529, 0, 65533, 65529, 0, 65534, 65529, 0, 65535, 65529, 0, 0, 65530, 0, 1, 65530, 1610612736, 2, 65530, 1073741824, 3, 65530, 0, 4, 65530, 0, 5, 65530, 0, 6, 65530, 536870912, 7, 65530, 536870912, 65528, 65530, 1073741824, 65529, 65530, 1610612736, 65530, 65530, 0, 65531, 65530, 536870912, 65532, 65530, 1073741824, 65533, 65530, 0, 65534, 65530, 536870912, 65535, 65530, 0, 0, 65531, 1073741824, 1, 65531, 0, 2, 65531, 0, 3, 65531, 1610612736, 4, 65531, 0, 5, 65531, 0, 6, 65531, 1073741824, 7, 65531, 536870912, 65528, 65531, 0, 65529, 65531, 0, 65530, 65531, 1073741824, 65531, 65531, 536870912, 65532, 65531, 536870912, 65533, 65531, 0, 65534, 65531, 536870912, 65535, 65531, 0, 0, 65532, 536870912, 1, 65532, 536870912, 2, 65532, 1073741824, 3, 65532, 1073741824, 4, 65532, 0, 5, 65532, 1073741824, 6, 65532, 536870912, 65529, 65532, 0, 65530, 65532, 0, 65531, 65532, 536870912, 65532, 65532, 536870912, 65533, 65532, 536870912, 65534, 65532, 1073741824, 65535, 65532, 0, 0, 65533, 0, 1, 65533, 1610612736, 2, 65533, 1610612736, 3, 65533, 0, 4, 65533, 0, 5, 65533, 536870912, 6, 65533, 1073741824, 65529, 65533, 1073741824, 65530, 65533, 0, 65531, 65533, 0, 65532, 65533, 0, 65533, 65533, 0, 65534, 65533, 536870912, 65535, 65533, 536870912, 0, 65534, 0, 1, 65534, 536870912, 2, 65534, 1073741824, 3, 65534, 536870912, 4, 65534, 0, 5, 65534, 1073741824, 6, 65534, 1073741824, 65529, 65534, 536870912, 65530, 65534, 0, 65531, 65534, 1610612736, 65532, 65534, 0, 65533, 65534, 536870912, 65534, 65534, 0, 65535, 65534, 0, 0, 65535, 0, 1, 65535, 536870912, 2, 65535, 1610612736, 3, 65535, 0, 4, 65535, 536870912, 5, 65535, 0, 6, 65535, 1610612736, 65529, 65535, 1073741824, 65530, 65535, 0, 65531, 65535, 536870912, 65532, 65535, 0, 65533, 65535, 1610612736, 65534, 65535, 0, 65535, 65535, 1073741824 )
+"cells": PoolIntArray( 0, 0, 1073741824, 1, 0, 0, 2, 0, 0, 3, 0, 1073741824, 4, 0, 0, 5, 0, 1073741824, 6, 0, 1073741824, 65529, 0, 1073741824, 65530, 0, 1073741824, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 1073741824, 65535, 0, 1073741824, 0, 1, 1073741824, 1, 1, 536870912, 2, 1, 0, 3, 1, 1073741824, 4, 1, 1073741824, 5, 1, 1073741824, 6, 1, 1073741824, 65529, 1, 0, 65530, 1, 536870912, 65531, 1, 1073741824, 65532, 1, 0, 65533, 1, 1610612736, 65534, 1, 0, 65535, 1, 1073741824, 0, 2, 1073741824, 1, 2, 1073741824, 2, 2, 536870912, 3, 2, 1610612736, 4, 2, 1073741824, 5, 2, 1073741824, 6, 2, 0, 65529, 2, 1073741824, 65530, 2, 536870912, 65531, 2, 536870912, 65532, 2, 1073741824, 65533, 2, 0, 65534, 2, 1073741824, 65535, 2, 0, 0, 3, 536870912, 1, 3, 536870912, 2, 3, 0, 3, 3, 0, 4, 3, 0, 5, 3, 536870912, 6, 3, 536870912, 65529, 3, 536870912, 65530, 3, 536870912, 65531, 3, 0, 65532, 3, 1073741824, 65533, 3, 0, 65534, 3, 536870912, 65535, 3, 0, 0, 65524, 536870912, 1, 65524, 0, 2, 65524, 0, 3, 65524, 0, 4, 65524, 0, 5, 65524, 536870912, 6, 65524, 536870912, 7, 65524, 536870912, 65528, 65524, 536870912, 65529, 65524, 0, 65530, 65524, 0, 65531, 65524, 1073741824, 65532, 65524, 1610612736, 65533, 65524, 0, 65534, 65524, 0, 65535, 65524, 0, 0, 65525, 536870912, 1, 65525, 1073741824, 2, 65525, 0, 3, 65525, 1610612736, 4, 65525, 536870912, 5, 65525, 1073741824, 6, 65525, 536870912, 7, 65525, 536870912, 65528, 65525, 1073741824, 65529, 65525, 536870912, 65530, 65525, 0, 65531, 65525, 0, 65532, 65525, 536870912, 65533, 65525, 1073741824, 65534, 65525, 0, 65535, 65525, 1073741824, 0, 65526, 0, 1, 65526, 0, 2, 65526, 0, 3, 65526, 1610612736, 4, 65526, 0, 5, 65526, 1610612736, 6, 65526, 0, 7, 65526, 536870912, 65528, 65526, 0, 65529, 65526, 0, 65530, 65526, 536870912, 65531, 65526, 1073741824, 65532, 65526, 0, 65533, 65526, 536870912, 65534, 65526, 0, 65535, 65526, 0, 0, 65527, 536870912, 1, 65527, 536870912, 2, 65527, 536870912, 3, 65527, 536870912, 4, 65527, 536870912, 5, 65527, 536870912, 6, 65527, 536870912, 7, 65527, 536870912, 65528, 65527, 1073741824, 65529, 65527, 0, 65530, 65527, 0, 65531, 65527, 0, 65532, 65527, 0, 65533, 65527, 0, 65534, 65527, 536870912, 65535, 65527, 1073741824, 0, 65528, 1610612736, 1, 65528, 1610612736, 2, 65528, 0, 3, 65528, 1610612736, 4, 65528, 0, 5, 65528, 1610612736, 6, 65528, 536870912, 7, 65528, 1073741824, 65528, 65528, 536870912, 65529, 65528, 536870912, 65530, 65528, 536870912, 65531, 65528, 1073741824, 65532, 65528, 1073741824, 65533, 65528, 0, 65534, 65528, 0, 65535, 65528, 0, 0, 65529, 0, 1, 65529, 0, 2, 65529, 536870912, 3, 65529, 536870912, 4, 65529, 536870912, 5, 65529, 0, 6, 65529, 0, 7, 65529, 0, 65528, 65529, 536870912, 65529, 65529, 0, 65530, 65529, 1610612736, 65531, 65529, 1610612736, 65532, 65529, 1073741824, 65533, 65529, 0, 65534, 65529, 1610612736, 65535, 65529, 1073741824, 0, 65530, 1073741824, 1, 65530, 0, 2, 65530, 1610612736, 3, 65530, 536870912, 4, 65530, 0, 5, 65530, 0, 6, 65530, 1073741824, 7, 65530, 1610612736, 65528, 65530, 0, 65529, 65530, 0, 65530, 65530, 536870912, 65531, 65530, 0, 65532, 65530, 536870912, 65533, 65530, 0, 65534, 65530, 0, 65535, 65530, 0, 0, 65531, 0, 1, 65531, 0, 2, 65531, 536870912, 3, 65531, 1610612736, 4, 65531, 536870912, 5, 65531, 1073741824, 6, 65531, 536870912, 7, 65531, 1073741824, 65528, 65531, 0, 65529, 65531, 0, 65530, 65531, 536870912, 65531, 65531, 1073741824, 65532, 65531, 1073741824, 65533, 65531, 1073741824, 65534, 65531, 1610612736, 65535, 65531, 0, 0, 65532, 1073741824, 1, 65532, 0, 2, 65532, 0, 3, 65532, 0, 4, 65532, 1073741824, 5, 65532, 536870912, 6, 65532, 0, 65529, 65532, 0, 65530, 65532, 536870912, 65531, 65532, 1073741824, 65532, 65532, 536870912, 65533, 65532, 1073741824, 65534, 65532, 0, 65535, 65532, 536870912, 0, 65533, 536870912, 1, 65533, 0, 2, 65533, 0, 3, 65533, 536870912, 4, 65533, 0, 5, 65533, 0, 6, 65533, 0, 65529, 65533, 536870912, 65530, 65533, 0, 65531, 65533, 0, 65532, 65533, 0, 65533, 65533, 0, 65534, 65533, 536870912, 65535, 65533, 536870912, 0, 65534, 0, 1, 65534, 536870912, 2, 65534, 0, 3, 65534, 0, 4, 65534, 0, 5, 65534, 0, 6, 65534, 0, 65529, 65534, 536870912, 65530, 65534, 0, 65531, 65534, 0, 65532, 65534, 0, 65533, 65534, 0, 65534, 65534, 0, 65535, 65534, 0, 0, 65535, 1073741824, 1, 65535, 0, 2, 65535, 1073741824, 3, 65535, 0, 4, 65535, 0, 5, 65535, 0, 6, 65535, 0, 65529, 65535, 0, 65530, 65535, 0, 65531, 65535, 0, 65532, 65535, 0, 65533, 65535, 0, 65534, 65535, 0, 65535, 65535, 0 )
 }
 _sections_unfolded = [ "Cell" ]
 __meta__ = {
@@ -76,7 +77,7 @@ __meta__ = {
 [node name="Spatial" type="Spatial" parent="GridMap" index="0"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.540335 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.9583 )
 
 [node name="Scene Root" parent="GridMap/Spatial" index="0" instance=ExtResource( 2 )]
 
@@ -167,280 +168,219 @@ transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 2.247
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.2313, 0, -0.753733 )
 
-[node name="Scene Root" parent="GridMap/Spatial2" index="0" instance=ExtResource( 2 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 13.5004 )
-
-[node name="Scene Root10" parent="GridMap/Spatial2" index="1" instance=ExtResource( 2 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 9.55613 )
-
-[node name="Scene Root14" parent="GridMap/Spatial2" index="2" instance=ExtResource( 2 )]
+[node name="Scene Root14" parent="GridMap/Spatial2" index="0" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 5.66183 )
 
-[node name="Scene Root22" parent="GridMap/Spatial2" index="3" instance=ExtResource( 2 )]
+[node name="Scene Root22" parent="GridMap/Spatial2" index="1" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 1.87517 )
 
-[node name="Scene Root27" parent="GridMap/Spatial2" index="4" instance=ExtResource( 2 )]
+[node name="Scene Root27" parent="GridMap/Spatial2" index="2" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, -1.95958 )
 
-[node name="Scene Root31" parent="GridMap/Spatial2" index="5" instance=ExtResource( 2 )]
+[node name="Scene Root31" parent="GridMap/Spatial2" index="3" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, -5.71621 )
 
-[node name="Scene Root2" parent="GridMap/Spatial2" index="6" instance=ExtResource( 3 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 12.8362 )
-
-[node name="Scene Root7" parent="GridMap/Spatial2" index="7" instance=ExtResource( 3 )]
+[node name="Scene Root7" parent="GridMap/Spatial2" index="4" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 8.89196 )
 
-[node name="Scene Root17" parent="GridMap/Spatial2" index="8" instance=ExtResource( 3 )]
+[node name="Scene Root17" parent="GridMap/Spatial2" index="5" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 4.99767 )
 
-[node name="Scene Root23" parent="GridMap/Spatial2" index="9" instance=ExtResource( 3 )]
+[node name="Scene Root23" parent="GridMap/Spatial2" index="6" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 1.21101 )
 
-[node name="Scene Root30" parent="GridMap/Spatial2" index="10" instance=ExtResource( 3 )]
+[node name="Scene Root30" parent="GridMap/Spatial2" index="7" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, -2.62375 )
 
-[node name="Scene Root35" parent="GridMap/Spatial2" index="11" instance=ExtResource( 3 )]
+[node name="Scene Root35" parent="GridMap/Spatial2" index="8" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, -6.38038 )
 
-[node name="Scene Root3" parent="GridMap/Spatial2" index="12" instance=ExtResource( 4 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 12.1754 )
-
-[node name="Scene Root12" parent="GridMap/Spatial2" index="13" instance=ExtResource( 4 )]
+[node name="Scene Root12" parent="GridMap/Spatial2" index="9" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 8.23116 )
 
-[node name="Scene Root16" parent="GridMap/Spatial2" index="14" instance=ExtResource( 4 )]
+[node name="Scene Root16" parent="GridMap/Spatial2" index="10" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 4.33687 )
 
-[node name="Scene Root20" parent="GridMap/Spatial2" index="15" instance=ExtResource( 4 )]
+[node name="Scene Root20" parent="GridMap/Spatial2" index="11" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 0.550204 )
 
-[node name="Scene Root25" parent="GridMap/Spatial2" index="16" instance=ExtResource( 4 )]
+[node name="Scene Root25" parent="GridMap/Spatial2" index="12" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, -3.28455 )
 
-[node name="Scene Root34" parent="GridMap/Spatial2" index="17" instance=ExtResource( 4 )]
+[node name="Scene Root34" parent="GridMap/Spatial2" index="13" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, -7.04118 )
 
-[node name="Scene Root4" parent="GridMap/Spatial2" index="18" instance=ExtResource( 5 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, 11.3503 )
-
-[node name="Scene Root8" parent="GridMap/Spatial2" index="19" instance=ExtResource( 5 )]
+[node name="Scene Root8" parent="GridMap/Spatial2" index="14" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, 7.40605 )
 
-[node name="Scene Root18" parent="GridMap/Spatial2" index="20" instance=ExtResource( 5 )]
+[node name="Scene Root18" parent="GridMap/Spatial2" index="15" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, 3.51176 )
 
-[node name="Scene Root21" parent="GridMap/Spatial2" index="21" instance=ExtResource( 5 )]
+[node name="Scene Root21" parent="GridMap/Spatial2" index="16" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, -0.274902 )
 
-[node name="Scene Root28" parent="GridMap/Spatial2" index="22" instance=ExtResource( 5 )]
+[node name="Scene Root28" parent="GridMap/Spatial2" index="17" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, -4.10966 )
 
-[node name="Scene Root5" parent="GridMap/Spatial2" index="23" instance=ExtResource( 6 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, 10.725 )
-
-[node name="Scene Root11" parent="GridMap/Spatial2" index="24" instance=ExtResource( 6 )]
+[node name="Scene Root11" parent="GridMap/Spatial2" index="18" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, 6.78074 )
 
-[node name="Scene Root13" parent="GridMap/Spatial2" index="25" instance=ExtResource( 6 )]
+[node name="Scene Root13" parent="GridMap/Spatial2" index="19" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, 2.88645 )
 
-[node name="Scene Root19" parent="GridMap/Spatial2" index="26" instance=ExtResource( 6 )]
+[node name="Scene Root19" parent="GridMap/Spatial2" index="20" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, -0.900212 )
 
-[node name="Scene Root26" parent="GridMap/Spatial2" index="27" instance=ExtResource( 6 )]
+[node name="Scene Root26" parent="GridMap/Spatial2" index="21" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, -4.73497 )
 
-[node name="Scene Root6" parent="GridMap/Spatial2" index="28" instance=ExtResource( 7 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 13.9509 )
-
-[node name="Scene Root9" parent="GridMap/Spatial2" index="29" instance=ExtResource( 7 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 10.0066 )
-
-[node name="Scene Root15" parent="GridMap/Spatial2" index="30" instance=ExtResource( 7 )]
+[node name="Scene Root15" parent="GridMap/Spatial2" index="22" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 6.1123 )
 
-[node name="Scene Root24" parent="GridMap/Spatial2" index="31" instance=ExtResource( 7 )]
+[node name="Scene Root24" parent="GridMap/Spatial2" index="23" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 2.32564 )
 
-[node name="Scene Root29" parent="GridMap/Spatial2" index="32" instance=ExtResource( 7 )]
+[node name="Scene Root29" parent="GridMap/Spatial2" index="24" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, -1.50911 )
 
-[node name="Scene Root32" parent="GridMap/Spatial2" index="33" instance=ExtResource( 7 )]
+[node name="Scene Root32" parent="GridMap/Spatial2" index="25" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, -5.26574 )
 
 [node name="Spatial3" type="Spatial" parent="GridMap" index="2"]
 
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.271207, 0, -0.753733 )
 
-[node name="Scene Root" parent="GridMap/Spatial3" index="0" instance=ExtResource( 2 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 13.5004 )
-
-[node name="Scene Root10" parent="GridMap/Spatial3" index="1" instance=ExtResource( 2 )]
+[node name="Scene Root10" parent="GridMap/Spatial3" index="0" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 9.55613 )
 
-[node name="Scene Root14" parent="GridMap/Spatial3" index="2" instance=ExtResource( 2 )]
+[node name="Scene Root14" parent="GridMap/Spatial3" index="1" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 5.66183 )
 
-[node name="Scene Root22" parent="GridMap/Spatial3" index="3" instance=ExtResource( 2 )]
+[node name="Scene Root22" parent="GridMap/Spatial3" index="2" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, 1.87517 )
 
-[node name="Scene Root27" parent="GridMap/Spatial3" index="4" instance=ExtResource( 2 )]
+[node name="Scene Root27" parent="GridMap/Spatial3" index="3" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, -1.95958 )
 
-[node name="Scene Root31" parent="GridMap/Spatial3" index="5" instance=ExtResource( 2 )]
+[node name="Scene Root31" parent="GridMap/Spatial3" index="4" instance=ExtResource( 2 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5947, 2.23504, -5.71621 )
 
-[node name="Scene Root2" parent="GridMap/Spatial3" index="6" instance=ExtResource( 3 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 12.8362 )
-
-[node name="Scene Root7" parent="GridMap/Spatial3" index="7" instance=ExtResource( 3 )]
+[node name="Scene Root7" parent="GridMap/Spatial3" index="5" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 8.89196 )
 
-[node name="Scene Root17" parent="GridMap/Spatial3" index="8" instance=ExtResource( 3 )]
+[node name="Scene Root17" parent="GridMap/Spatial3" index="6" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 4.99767 )
 
-[node name="Scene Root23" parent="GridMap/Spatial3" index="9" instance=ExtResource( 3 )]
+[node name="Scene Root23" parent="GridMap/Spatial3" index="7" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, 1.21101 )
 
-[node name="Scene Root30" parent="GridMap/Spatial3" index="10" instance=ExtResource( 3 )]
+[node name="Scene Root30" parent="GridMap/Spatial3" index="8" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, -2.62375 )
 
-[node name="Scene Root35" parent="GridMap/Spatial3" index="11" instance=ExtResource( 3 )]
+[node name="Scene Root35" parent="GridMap/Spatial3" index="9" instance=ExtResource( 3 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.4737, 2.23504, -6.38038 )
 
-[node name="Scene Root3" parent="GridMap/Spatial3" index="12" instance=ExtResource( 4 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 12.1754 )
-
-[node name="Scene Root12" parent="GridMap/Spatial3" index="13" instance=ExtResource( 4 )]
+[node name="Scene Root12" parent="GridMap/Spatial3" index="10" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 8.23116 )
 
-[node name="Scene Root16" parent="GridMap/Spatial3" index="14" instance=ExtResource( 4 )]
+[node name="Scene Root16" parent="GridMap/Spatial3" index="11" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 4.33687 )
 
-[node name="Scene Root20" parent="GridMap/Spatial3" index="15" instance=ExtResource( 4 )]
+[node name="Scene Root20" parent="GridMap/Spatial3" index="12" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, 0.550204 )
 
-[node name="Scene Root25" parent="GridMap/Spatial3" index="16" instance=ExtResource( 4 )]
+[node name="Scene Root25" parent="GridMap/Spatial3" index="13" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, -3.28455 )
 
-[node name="Scene Root34" parent="GridMap/Spatial3" index="17" instance=ExtResource( 4 )]
+[node name="Scene Root34" parent="GridMap/Spatial3" index="14" instance=ExtResource( 4 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.717, 2.23504, -7.04118 )
 
-[node name="Scene Root4" parent="GridMap/Spatial3" index="18" instance=ExtResource( 5 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, 11.3503 )
-
-[node name="Scene Root8" parent="GridMap/Spatial3" index="19" instance=ExtResource( 5 )]
+[node name="Scene Root8" parent="GridMap/Spatial3" index="15" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, 7.40605 )
 
-[node name="Scene Root18" parent="GridMap/Spatial3" index="20" instance=ExtResource( 5 )]
+[node name="Scene Root18" parent="GridMap/Spatial3" index="16" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, 3.51176 )
 
-[node name="Scene Root21" parent="GridMap/Spatial3" index="21" instance=ExtResource( 5 )]
+[node name="Scene Root21" parent="GridMap/Spatial3" index="17" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, -0.274902 )
 
-[node name="Scene Root28" parent="GridMap/Spatial3" index="22" instance=ExtResource( 5 )]
+[node name="Scene Root28" parent="GridMap/Spatial3" index="18" instance=ExtResource( 5 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.6804, 2.23504, -4.10966 )
 
-[node name="Scene Root5" parent="GridMap/Spatial3" index="23" instance=ExtResource( 6 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, 10.725 )
-
-[node name="Scene Root11" parent="GridMap/Spatial3" index="24" instance=ExtResource( 6 )]
+[node name="Scene Root11" parent="GridMap/Spatial3" index="19" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, 6.78074 )
 
-[node name="Scene Root13" parent="GridMap/Spatial3" index="25" instance=ExtResource( 6 )]
+[node name="Scene Root13" parent="GridMap/Spatial3" index="20" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, 2.88645 )
 
-[node name="Scene Root19" parent="GridMap/Spatial3" index="26" instance=ExtResource( 6 )]
+[node name="Scene Root19" parent="GridMap/Spatial3" index="21" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, -0.900212 )
 
-[node name="Scene Root26" parent="GridMap/Spatial3" index="27" instance=ExtResource( 6 )]
+[node name="Scene Root26" parent="GridMap/Spatial3" index="22" instance=ExtResource( 6 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.8837, 2.23504, -4.73497 )
 
-[node name="Scene Root6" parent="GridMap/Spatial3" index="28" instance=ExtResource( 7 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 13.9509 )
-
-[node name="Scene Root9" parent="GridMap/Spatial3" index="29" instance=ExtResource( 7 )]
-
-transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 10.0066 )
-
-[node name="Scene Root15" parent="GridMap/Spatial3" index="30" instance=ExtResource( 7 )]
+[node name="Scene Root15" parent="GridMap/Spatial3" index="23" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 6.1123 )
 
-[node name="Scene Root24" parent="GridMap/Spatial3" index="31" instance=ExtResource( 7 )]
+[node name="Scene Root24" parent="GridMap/Spatial3" index="24" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, 2.32564 )
 
-[node name="Scene Root29" parent="GridMap/Spatial3" index="32" instance=ExtResource( 7 )]
+[node name="Scene Root29" parent="GridMap/Spatial3" index="25" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, -1.50911 )
 
-[node name="Scene Root32" parent="GridMap/Spatial3" index="33" instance=ExtResource( 7 )]
+[node name="Scene Root32" parent="GridMap/Spatial3" index="26" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, -5.26574 )
 
@@ -653,5 +593,69 @@ transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.53
 [node name="Scene Root29" parent="GridMap/Spatial5" index="24" instance=ExtResource( 7 )]
 
 transform = Transform( -2, 0, -1.74846e-007, 0, 2, 0, 1.74846e-007, 0, -2, 13.5316, 2.23504, -1.50911 )
+
+[node name="Spatial6" type="Spatial" parent="GridMap" index="5"]
+
+editor/display_folded = true
+
+[node name="InvisibleCollidingCube" parent="GridMap/Spatial6" index="0" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1103, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube2" parent="GridMap/Spatial6" index="1" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1659, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube3" parent="GridMap/Spatial6" index="2" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.23702, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube4" parent="GridMap/Spatial6" index="3" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.23773, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube5" parent="GridMap/Spatial6" index="4" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.33932, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube6" parent="GridMap/Spatial6" index="5" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.40361, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube7" parent="GridMap/Spatial6" index="6" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44858, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube8" parent="GridMap/Spatial6" index="7" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.490787, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube9" parent="GridMap/Spatial6" index="8" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.45998, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube10" parent="GridMap/Spatial6" index="9" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.42383, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube11" parent="GridMap/Spatial6" index="10" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35185, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube12" parent="GridMap/Spatial6" index="11" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29038, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube13" parent="GridMap/Spatial6" index="12" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.216, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube14" parent="GridMap/Spatial6" index="13" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1028, 3.02375, -23.4854 )
+
+[node name="InvisibleCollidingCube15" parent="GridMap/Spatial6" index="14" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0373, 3.02375, -23.4854 )
 
 

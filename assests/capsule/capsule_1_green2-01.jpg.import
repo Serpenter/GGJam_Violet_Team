@@ -2,13 +2,13 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/capsule_1_green2-01.jpg-fb5e94712141ea050a5cac2ad7cbfd12.s3tc.stex"
-path.etc2="res://.import/capsule_1_green2-01.jpg-fb5e94712141ea050a5cac2ad7cbfd12.etc2.stex"
+path.s3tc="res://.import/capsule_1_green2-01.jpg-42f6291b95d80b3b8b2e424296eb9c7c.s3tc.stex"
+path.etc2="res://.import/capsule_1_green2-01.jpg-42f6291b95d80b3b8b2e424296eb9c7c.etc2.stex"
 
 [deps]
 
-source_file="res://assets/capsule/capsule_1_green2-01.jpg"
-dest_files=[ "res://.import/capsule_1_green2-01.jpg-fb5e94712141ea050a5cac2ad7cbfd12.s3tc.stex", "res://.import/capsule_1_green2-01.jpg-fb5e94712141ea050a5cac2ad7cbfd12.etc2.stex" ]
+source_file="res://assests/capsule/capsule_1_green2-01.jpg"
+dest_files=[ "res://.import/capsule_1_green2-01.jpg-42f6291b95d80b3b8b2e424296eb9c7c.s3tc.stex", "res://.import/capsule_1_green2-01.jpg-42f6291b95d80b3b8b2e424296eb9c7c.etc2.stex" ]
 
 [params]
 
