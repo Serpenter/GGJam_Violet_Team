@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bush_01_06.obj-3f4f589ed05539cdb4c24cf9832eb041.mesh"
+
+[deps]
+
+files=[ "res://.import/bush_01_06.obj-3f4f589ed05539cdb4c24cf9832eb041.mesh" ]
+
+source_file="res://assests/bush/bush_01_06.obj"
+dest_files=[ "res://.import/bush_01_06.obj-3f4f589ed05539cdb4c24cf9832eb041.mesh", "res://.import/bush_01_06.obj-3f4f589ed05539cdb4c24cf9832eb041.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

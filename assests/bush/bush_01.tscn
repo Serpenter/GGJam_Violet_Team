@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://bush_1-01.jpg" type="Texture" id=1]
+[ext_resource path="res://assests/bush/bush_1-01.jpg" type="Texture" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -124,11 +124,66 @@ proximity_fade_enable = false
 distance_fade_enable = false
 _sections_unfolded = [ "Albedo" ]
 
+[sub_resource type="BoxShape" id=4]
+
+extents = Vector3( 1, 1, 1 )
+
 [node name="Scene Root" type="Spatial" index="0"]
 
 [node name="MeshBody1" type="MeshInstance" parent="." index="0"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, -1.62921e-007, -1, 0, 1, -1.62921e-007, 0, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 2 )
+skeleton = NodePath("..")
+material/0 = SubResource( 3 )
+_sections_unfolded = [ "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="MeshBody1" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshBody1/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="MeshBody2" type="MeshInstance" parent="." index="1"]
+
+transform = Transform( 0.964968, -4.27453e-008, -0.262368, -0.262368, -1.57214e-007, -0.964968, 0, 1, -1.62921e-007, 0, 0, 0.215553 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 2 )
+skeleton = NodePath("..")
+material/0 = SubResource( 3 )
+_sections_unfolded = [ "material" ]
+
+[node name="MeshBody3" type="MeshInstance" parent="." index="2"]
+
+transform = Transform( 0.961542, 4.47477e-008, 0.274659, 0.274659, -1.56655e-007, -0.961542, 0, 1, -1.62921e-007, -0.230729, 0, 0.102188 )
 layers = 1
 material_override = null
 cast_shadow = 1
