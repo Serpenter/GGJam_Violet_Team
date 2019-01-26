@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/new_box.obj-744cd95d5879702aab29ffc2cb15304e.mesh"
+
+[deps]
+
+files=[ "res://.import/new_box.obj-744cd95d5879702aab29ffc2cb15304e.mesh" ]
+
+source_file="res://assests/boxes/new_box.obj"
+dest_files=[ "res://.import/new_box.obj-744cd95d5879702aab29ffc2cb15304e.mesh", "res://.import/new_box.obj-744cd95d5879702aab29ffc2cb15304e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

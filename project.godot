@@ -13,3 +13,8 @@ config_version=3
 config/name="master_project"
 run/main_scene="res://main_menu/SimpleMainMenu.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/fullscreen=true

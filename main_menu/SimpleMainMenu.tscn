@@ -9,14 +9,15 @@
 
 [node name="Sprite2" type="Sprite" parent="." index="0"]
 
-scale = Vector2( 0.341612, 0.599516 )
+scale = Vector2( 0.473255, 0.8 )
 texture = ExtResource( 1 )
 centered = false
-_sections_unfolded = [ "Offset" ]
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-scale = Vector2( 0.302847, 0.347167 )
+position = Vector2( 8.7016, 57.4252 )
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
@@ -27,10 +28,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 248.0
-margin_top = 296.0
-margin_right = 412.0
-margin_bottom = 402.0
+margin_left = 368.0
+margin_top = 398.0
+margin_right = 532.0
+margin_bottom = 504.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -50,10 +51,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 601.0
-margin_top = 295.0
-margin_right = 765.0
-margin_bottom = 401.0
+margin_left = 829.0
+margin_top = 401.0
+margin_right = 993.0
+margin_bottom = 507.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2

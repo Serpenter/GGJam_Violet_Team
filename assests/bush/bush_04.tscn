@@ -60,7 +60,7 @@ _sections_unfolded = [ "Albedo" ]
 
 extents = Vector3( 1, 1, 1 )
 
-[node name="Scene Root" type="Spatial"]
+[node name="Scene Root" type="Spatial" index="0"]
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="0"]
 
