@@ -12,6 +12,10 @@ var state = STATE.NORMAL
 var timer_o2 = Timer.new()
 var timer_acceleration = Timer.new()
 
+var inventory = []
+
+signal get_collectible(collectible_object)
+
 enum STATE{
 	FAINT,
 	NORMAL
@@ -30,6 +34,8 @@ func _ready():
 	add_child(timer_acceleration)
 	level_o2 = START_LVL_O2
 	level_o2_changing_rate = NORMAL_O2_CHANGING_RATE
+	
+	self.connect("get_collectible", self, "on_collect")
 
 
 func _process(delta):
@@ -41,6 +47,8 @@ func _process(delta):
 		if level_o2 >= START_LVL_O2:
 			level_o2 = START_LVL_O2
 			set_state(STATE.NORMAL)
+	
+	print(inventory)
 
 
 func _input(event):
@@ -64,4 +72,8 @@ func _on_timer_o2_timeout():
 func _on_timer_acceleration_timeout():
 	level_o2_changing_rate = NORMAL_O2_CHANGING_RATE
 	get_parent().speed = get_parent().INITIAL_SPEED
+	
+
+func on_collect(object):
+	inventory.append(object)
 	

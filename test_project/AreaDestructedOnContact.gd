@@ -14,7 +14,6 @@ func _ready():
 	#self.connect("custom_area_entered",self,"on_custom_ares_entered")
 	#self.connect("area_entered",self,"on_custom_area_entered")
 	self.connect("area_entered",self,"on_custom_area_entered")
-	pass
 
 func _process(delta):
 	
