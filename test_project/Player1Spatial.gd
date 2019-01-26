@@ -12,6 +12,8 @@ var state = STATE.NORMAL
 var timer_o2 = Timer.new()
 var timer_acceleration = Timer.new()
 
+var inventory = []
+
 enum STATE{
 	FAINT,
 	NORMAL

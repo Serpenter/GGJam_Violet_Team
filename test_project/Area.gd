@@ -19,6 +19,6 @@ func on_area_entered(object):
 	#change sprite to collectible
 	if (object.is_in_group("Player1") or object.is_in_group("Player2")) and not object.is_in_group("bullets"):
 		var playerSpatial = object.get_parent().get_node("Spatial")
-		playerSpatial.inventory.append("res://CollectibleObject3.gd")
+		playerSpatial.inventory.append("res://CollectibleObject1.gd")
 		get_parent().queue_free()
 		
