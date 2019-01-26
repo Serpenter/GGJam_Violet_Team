@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Wagner.wav-cb1bddba38c62cb89a0429fbd163cda3.sample"
+
+[deps]
+
+source_file="res://intro/Wagner.wav"
+dest_files=[ "res://.import/Wagner.wav-cb1bddba38c62cb89a0429fbd163cda3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
