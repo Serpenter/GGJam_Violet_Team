@@ -1,4 +1,4 @@
-# Blender MTL File: 'bush_01.blend'
+# Blender MTL File: 'None'
 # Material Count: 1
 
 newmtl Material.001
@@ -10,5 +10,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd bush_1-01.jpg
-map_Ka bush_1-01.jpg
+map_Kd C:\Users\Kostya\Documents\assets\bush_1-01.jpg
