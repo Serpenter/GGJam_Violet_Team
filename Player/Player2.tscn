@@ -1,0 +1,237 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Player2.gd" type="Script" id=1]
+[ext_resource path="res://assets/astronaut1/astronaut_G_v06.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/astronaut1/astronaut_B_L_v02-01.jpg" type="Texture" id=3]
+
+[sub_resource type="SphereShape" id=1]
+
+radius = 1.0
+
+[sub_resource type="SpatialMaterial" id=2]
+
+render_priority = 0
+flags_transparent = false
+flags_unshaded = false
+flags_vertex_lighting = false
+flags_no_depth_test = false
+flags_use_point_size = false
+flags_world_triplanar = false
+flags_fixed_size = false
+flags_albedo_tex_force_srgb = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+params_diffuse_mode = 0
+params_specular_mode = 0
+params_blend_mode = 0
+params_cull_mode = 0
+params_depth_draw_mode = 0
+params_line_width = 1.0
+params_point_size = 1.0
+params_billboard_mode = 0
+params_grow = false
+params_use_alpha_scissor = false
+albedo_color = Color( 1, 1, 1, 1 )
+albedo_texture = ExtResource( 3 )
+metallic = 0.0
+metallic_specular = 0.5
+metallic_texture_channel = 0
+roughness = 0.0
+roughness_texture_channel = 0
+emission_enabled = false
+normal_enabled = false
+rim_enabled = false
+clearcoat_enabled = false
+anisotropy_enabled = false
+ao_enabled = false
+depth_enabled = false
+subsurf_scatter_enabled = false
+transmission_enabled = false
+refraction_enabled = false
+detail_enabled = false
+uv1_scale = Vector3( 1, 1, 1 )
+uv1_offset = Vector3( 0, 0, 0 )
+uv1_triplanar = false
+uv1_triplanar_sharpness = 1.0
+uv2_scale = Vector3( 1, 1, 1 )
+uv2_offset = Vector3( 0, 0, 0 )
+uv2_triplanar = false
+uv2_triplanar_sharpness = 1.0
+proximity_fade_enable = false
+distance_fade_enable = false
+
+[sub_resource type="GDScript" id=3]
+
+script/source = "extends Area
+
+func _ready():
+	self.connect(\"area_entered\",self,\"on_area_entered\")
+	pass
+
+func on_area_entered(object):
+		
+	if object.is_in_group(\"bullets\"):
+		
+		print(\"Player was hit by a fucking bullet\")
+		var playerSpatial = get_parent().get_node(\"Spatial\")
+		playerSpatial.level_o2 =- object.o2_damage"
+
+[sub_resource type="SphereShape" id=4]
+
+radius = 1.0
+
+[sub_resource type="GDScript" id=5]
+
+script/source = "extends Spatial
+
+var level_o2 = 0.0
+var START_LVL_O2 = 20.0
+var ACCELERATED_SPEED = 10
+var ACCELERATING_O2_CHANGING_RATE = 5.0
+var NORMAL_O2_CHANGING_RATE = 2.0
+var level_o2_changing_rate = 0.0
+var not_moving = true
+var state = STATE.NORMAL
+
+var timer_o2 = Timer.new()
+var timer_acceleration = Timer.new()
+
+var inventory = []
+
+signal get_collectible(collectible_object)
+
+enum STATE{
+	FAINT,
+	NORMAL
+}
+
+func set_state(new_state):
+	if state != new_state:
+		state = new_state
+
+func _ready():
+	timer_o2.set_wait_time(3.0)
+	timer_acceleration.set_wait_time(2.0)
+	timer_o2.connect(\"timeout\",self,\"_on_timer_o2_timeout\")
+	timer_acceleration.connect(\"timeout\",self,\"_on_timer_acceleration_timeout\")
+	add_child(timer_o2)
+	add_child(timer_acceleration)
+	level_o2 = START_LVL_O2
+	level_o2_changing_rate = NORMAL_O2_CHANGING_RATE
+	
+	self.connect(\"get_collectible\", self, \"on_collect\")
+
+
+func _process(delta):
+	if level_o2 <= 0.0:
+		set_state(STATE.FAINT)
+
+	if level_o2 < START_LVL_O2 and (not_moving or state == STATE.FAINT):
+		level_o2 += level_o2_changing_rate
+		if level_o2 >= START_LVL_O2:
+			level_o2 = START_LVL_O2
+			set_state(STATE.NORMAL)
+	
+	print(inventory)
+
+
+func _input(event):
+	if (InputMap.event_is_action(event, \"move_left_p2\") 
+	or InputMap.event_is_action(event,\"move_right_p2\")
+	or InputMap.event_is_action(event,\"move_down_p2\")
+	or InputMap.event_is_action(event,\"move_up_p2\")
+	and state == STATE.NORMAL):
+		level_o2 -= level_o2_changing_rate
+		not_moving = false
+		timer_o2.start()
+	if (InputMap.event_is_action(event, \"acceleration_activation_p2\") and level_o2 == START_LVL_O2):
+		get_parent().speed = ACCELERATED_SPEED
+		level_o2_changing_rate = ACCELERATING_O2_CHANGING_RATE
+		timer_acceleration.start()
+
+
+func _on_timer_o2_timeout():
+	not_moving = true
+	
+func _on_timer_acceleration_timeout():
+	level_o2_changing_rate = NORMAL_O2_CHANGING_RATE
+	get_parent().speed = get_parent().INITIAL_SPEED
+	
+
+func on_collect(object):
+	inventory.append(object)
+	"
+
+[node name="Player2" type="KinematicBody" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+axis_lock_linear_x = false
+axis_lock_linear_y = false
+axis_lock_linear_z = false
+axis_lock_angular_x = false
+axis_lock_angular_y = false
+axis_lock_angular_z = false
+collision/safe_margin = 0.001
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="." index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="1"]
+
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 2 )
+skeleton = NodePath("..")
+material/0 = SubResource( 2 )
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="AreaPlayer2" type="Area" parent="." index="2" groups=[
+"Player2",
+]]
+
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+script = SubResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="AreaPlayer2" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="Spatial" type="Spatial" parent="." index="3"]
+
+script = SubResource( 5 )
+
+
