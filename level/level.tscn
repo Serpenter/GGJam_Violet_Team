@@ -1,19 +1,68 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://mesh_grids/cube_mesh_with_collider.meshlib" type="MeshLibrary" id=1]
 
 [node name="MainNode" type="Node" index="0"]
 
-[node name="MeshInstance" type="MeshInstance" parent="." index="0"]
+[node name="GridMap" type="GridMap" parent="." index="0"]
 
+theme = ExtResource( 1 )
+cell_size = Vector3( 2, 2, 2 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 0, -1610612736, 1, 0, 0, 2, 0, 0, 3, 0, -1610612736, 4, 0, -1610612736, 65531, 0, 1073741824, 65532, 0, -1610612736, 65533, 0, -1610612736, 65534, 0, -1610612736, 65535, 0, 0, 0, 1, 0, 1, 1, 0, 2, 1, 1073741824, 3, 1, 0, 4, 1, -1610612736, 65531, 1, 1610612736, 65532, 1, 1073741824, 65533, 1, -1610612736, 65534, 1, 0, 65535, 1, 1073741824, 0, 2, 1073741824, 1, 2, 536870912, 2, 2, 1073741824, 3, 2, 0, 4, 2, 0, 65531, 2, 0, 65532, 2, -1610612736, 65533, 2, 0, 65534, 2, 536870912, 65535, 2, -1610612736, 0, 3, -1610612736, 1, 3, 1073741824, 2, 3, 1610612736, 3, 3, 536870912, 4, 3, 0, 65531, 3, 0, 65532, 3, -1610612736, 65533, 3, -1610612736, 65534, 3, 1073741824, 65535, 3, -1610612736, 0, 4, 1610612736, 1, 4, 0, 2, 4, 1073741824, 3, 4, 0, 4, 4, -1610612736, 65531, 4, 0, 65532, 4, 0, 65533, 4, 0, 65534, 4, -1610612736, 65535, 4, -1610612736, 0, 65531, 0, 1, 65531, 0, 2, 65531, -1610612736, 3, 65531, 0, 4, 65531, 1073741824, 65531, 65531, 0, 65532, 65531, 0, 65533, 65531, 0, 65534, 65531, 1073741824, 65535, 65531, -1610612736, 0, 65532, 0, 1, 65532, 0, 2, 65532, 0, 3, 65532, 1610612736, 4, 65532, -1610612736, 65531, 65532, 1073741824, 65532, 65532, -1610612736, 65533, 65532, 0, 65534, 65532, 0, 65535, 65532, 0, 0, 65533, 536870912, 1, 65533, 0, 2, 65533, 1610612736, 3, 65533, -1610612736, 4, 65533, -1610612736, 65531, 65533, 0, 65532, 65533, 0, 65533, 65533, 1610612736, 65534, 65533, -1610612736, 65535, 65533, 0, 0, 65534, 0, 1, 65534, 0, 2, 65534, -1610612736, 3, 65534, -1610612736, 4, 65534, -1610612736, 65531, 65534, 0, 65532, 65534, 1073741824, 65533, 65534, 1073741824, 65534, 65534, 1610612736, 65535, 65534, 0, 0, 65535, 0, 1, 65535, 0, 2, 65535, -1610612736, 3, 65535, 0, 4, 65535, 1073741824, 65531, 65535, 0, 65532, 65535, 0, 65533, 65535, 536870912, 65534, 65535, 0, 65535, 65535, 1073741824 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Camera" type="Camera" parent="." index="1"]
+
+transform = Transform( 1, 0, 0, 0, 0.80352, 0.595278, 0, -0.595278, 0.80352, 0, 10.7489, 11.8878 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 100.0
+
+[node name="DirectionalLight" type="DirectionalLight" parent="." index="2"]
+
+transform = Transform( 1, 0, 0, 0, 0.00294299, 0.999996, 0, -0.999996, 0.00294299, 0, 33.4238, 0 )
 layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
-mesh = null
-skeleton = NodePath("..")
+light_color = Color( 1, 1, 1, 1 )
+light_energy = 1.0
+light_indirect_energy = 1.0
+light_negative = false
+light_specular = 0.5
+light_bake_mode = 1
+light_cull_mask = -1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 1 )
+shadow_bias = 0.1
+shadow_contact = 0.0
+shadow_reverse_cull_face = false
+editor_only = false
+directional_shadow_mode = 2
+directional_shadow_split_1 = 0.1
+directional_shadow_split_2 = 0.2
+directional_shadow_split_3 = 0.5
+directional_shadow_blend_splits = false
+directional_shadow_normal_bias = 0.8
+directional_shadow_bias_split_scale = 0.25
+directional_shadow_depth_range = 0
+directional_shadow_max_distance = 200.0
 
 
