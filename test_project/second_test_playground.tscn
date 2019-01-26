@@ -265,7 +265,7 @@ _sections_unfolded = [ "Albedo" ]
 radius = 1.0
 height = 1.0
 
-[node name="MainNode" type="Node" index="0"]
+[node name="MainNode" type="Node"]
 
 [node name="Camera" type="Camera" parent="." index="0"]
 
