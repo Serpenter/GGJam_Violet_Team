@@ -9,14 +9,8 @@ func _ready():
 	pass
 
 func on_area_entered(object):
-	
-	if object.is_in_group("collectable_items"):
 		
-		print("Player collected some shit")
-		var playerSpatial = get_parent().get_node("Spatial")
-		playerSpatial.inventory.append(object)
-		
-	elif object.is_in_group("bullets"):
+	if object.is_in_group("bullets"):
 		
 		print("Player was hit by a fucking bullet")
 		var playerSpatial = get_parent().get_node("Spatial")

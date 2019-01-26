@@ -265,7 +265,7 @@ _sections_unfolded = [ "Albedo" ]
 radius = 1.0
 height = 1.0
 
-[node name="MainNode" type="Node"]
+[node name="MainNode" type="Node" index="0"]
 
 [node name="Camera" type="Camera" parent="." index="0"]
 
@@ -327,6 +327,7 @@ _sections_unfolded = [ "material" ]
 "Player1",
 ]]
 
+editor/display_folded = true
 input_ray_pickable = false
 input_capture_on_drag = false
 space_override = 0
