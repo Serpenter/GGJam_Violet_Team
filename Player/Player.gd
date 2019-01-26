@@ -6,7 +6,7 @@ var starting_position = Vector3(0.0, 0.0, 20.0)
 
 var face_direction
 
-var LAZOR_BULLET = preload("res://LazorBullet.tscn")
+var LAZOR_BULLET = preload("res://Bullet/LazorBullet.tscn")
 
 signal custom_intersection(object)
 
@@ -21,13 +21,13 @@ func _process(delta):
 		return
 		
 	var motion = Vector3()
-	if Input.is_action_pressed("move_left"):
-		motion += Vector3(0.0, 0.0, -1.0)
-	if Input.is_action_pressed("move_right"):
-		motion += Vector3(0.0, 0.0, 1.0)
-	if Input.is_action_pressed("move_up"):
-		motion += Vector3(1.0, 0.0, 0.0)
 	if Input.is_action_pressed("move_down"):
+		motion += Vector3(0.0, 0.0, -1.0)
+	if Input.is_action_pressed("move_up"):
+		motion += Vector3(0.0, 0.0, 1.0)
+	if Input.is_action_pressed("move_left"):
+		motion += Vector3(1.0, 0.0, 0.0)
+	if Input.is_action_pressed("move_right"):
 		motion += Vector3(-1.0, 0.0, 0.0)
 		
 	motion = motion.normalized()
@@ -39,7 +39,7 @@ func _process(delta):
 	
 	move_and_slide(motion)	
 	
-	if Input.is_action_just_pressed("fire_action"):
+	if Input.is_action_just_pressed("fire"):
 		fire_mah_lazors()
 	
 	

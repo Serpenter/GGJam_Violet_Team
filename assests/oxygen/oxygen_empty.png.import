@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/astronaut_A_R_v02-01.jpg-bb8fbe98bc109289af5953e094575a14.stex"
+path="res://.import/oxygen_empty.png-f23b6e0c2e2d1c1f8131e3c321df32ed.stex"
 
 [deps]
 
-source_file="res://assests/astronaut1/astronaut_A_R_v02-01.jpg"
-dest_files=[ "res://.import/astronaut_A_R_v02-01.jpg-bb8fbe98bc109289af5953e094575a14.stex" ]
+source_file="res://assests/oxygen/oxygen_empty.png"
+dest_files=[ "res://.import/oxygen_empty.png-f23b6e0c2e2d1c1f8131e3c321df32ed.stex" ]
 
 [params]
 

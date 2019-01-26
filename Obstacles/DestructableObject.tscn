@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Area.gd" type="Script" id=1]
+[ext_resource path="res://Player/PlayerArea.gd" type="Script" id=1]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -70,7 +70,7 @@ extents = Vector3( 1, 1, 1 )
 
 extents = Vector3( 1, 1, 1 )
 
-[node name="DestructableObject" type="MeshInstance" index="0"]
+[node name="DestructableObject" type="MeshInstance"]
 
 layers = 1
 material_override = null

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://capsule_ble_v03.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://capsule_1_green2-01.jpg" type="Texture" id=2]
+[ext_resource path="res://assests/capsule/capsule_ble_v03.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assests/capsule/capsule_1_green2-01.jpg" type="Texture" id=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -60,6 +60,7 @@ _sections_unfolded = [ "Albedo", "Detail" ]
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="0"]
 
+transform = Transform( -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0, 0, 1, -0.00157142, 1.49087, 0.0041213 )
 layers = 1
 material_override = null
 cast_shadow = 1
@@ -73,6 +74,6 @@ mesh = ExtResource( 1 )
 skeleton = NodePath("..")
 material/0 = SubResource( 1 )
 material/1 = null
-_sections_unfolded = [ "material" ]
+_sections_unfolded = [ "Transform", "material" ]
 
 

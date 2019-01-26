@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Material_001.material" type="Material" id=1]
-[ext_resource path="res://astronaut_A_v02-01-01.jpg" type="Texture" id=2]
+[ext_resource path="res://assests/new_astronauts/Material_001.material" type="Material" id=1]
+[ext_resource path="res://assests/new_astronauts/astronaut_A_v02-01-01.jpg" type="Texture" id=2]
 
 [sub_resource type="ArrayMesh" id=1]
 
@@ -75,7 +75,7 @@ proximity_fade_enable = false
 distance_fade_enable = false
 _sections_unfolded = [ "Albedo" ]
 
-[node name="Spatial" type="Spatial" index="0"]
+[node name="Spatial" type="Spatial"]
 
 [node name="MeshBody7" type="MeshInstance" parent="." index="0"]
 
