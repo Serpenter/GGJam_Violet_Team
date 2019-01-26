@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/astronaut_G_v06.obj-d1bb5016720325f503340804875ad069.mesh"
+
+[deps]
+
+files=[ "res://.import/astronaut_G_v06.obj-d1bb5016720325f503340804875ad069.mesh" ]
+
+source_file="res://astronaut_G_v06.obj"
+dest_files=[ "res://.import/astronaut_G_v06.obj-d1bb5016720325f503340804875ad069.mesh", "res://.import/astronaut_G_v06.obj-d1bb5016720325f503340804875ad069.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
