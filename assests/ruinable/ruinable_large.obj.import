@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ruinable_large.obj-b503f65e431864261c24af7eb533f729.mesh"
+
+[deps]
+
+files=[ "res://.import/ruinable_large.obj-b503f65e431864261c24af7eb533f729.mesh" ]
+
+source_file="res://assests/ruinable/ruinable_large.obj"
+dest_files=[ "res://.import/ruinable_large.obj-b503f65e431864261c24af7eb533f729.mesh", "res://.import/ruinable_large.obj-b503f65e431864261c24af7eb533f729.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

@@ -1,10 +1,10 @@
 extends Area
 
 var velocity = Vector3()
-var speed = 2
+var speed = 10
 
-var damage = 3
-var o2_damage = 0
+var damage = 2
+var o2_damage = 10
 
 
 func _ready():
@@ -15,10 +15,7 @@ func _ready():
 			
 func _process(delta):
 	
-	var a = global_transform.origin
 	global_transform.origin += velocity * delta
-	var b = global_transform.origin
-	var c
 	
 func on_area_entered(object):
 	
@@ -31,10 +28,23 @@ func on_area_entered(object):
 		object.hp -= damage
 	
 	for my_g in my_groups:
-		if collider_groupd.has(my_g):
+		if my_g != "idle_process" and collider_groupd.has(my_g):
 			groups_intersect = true
 			break
+	
+	if not groups_intersect and (collider_groupd.has("Player1") or collider_groupd.has("Player2")):
 			
+			var players = get_node("/root/MainNode/Players")
+
+			var player
+			if collider_groupd.has("Player1"):
+				player = players.get_node("Player1")
+			else:
+				player = players.get_node("Player2")
+				
+			var playerSpatial = player.get_node("Spatial")
+			if playerSpatial.state != playerSpatial.STATE.FAINT:
+				playerSpatial.level_o2 -= o2_damage
 			
 	if not groups_intersect:				
 		queue_free()

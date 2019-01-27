@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assests/boxes/new_box.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://assests/boxes/box_blue-01.jpg" type="Texture" id=2]
-[ext_resource path="res://Collectibles/CollectableBlue.gd" type="Script" id=3]
+[ext_resource path="res://assests/boxes/box_pink-01.jpg" type="Texture" id=2]
+[ext_resource path="res://Collectibles/CollectablePink.gd" type="Script" id=3]
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -63,12 +63,11 @@ extents = Vector3( 0.325363, 0.324945, 0.127663 )
 
 [node name="Spatial" type="Spatial"]
 
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 0, 0, 0 )
+transform = Transform( -3, 0, -4.52987e-007, 0, 3, 0, 4.52987e-007, 0, -3, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="0"]
 
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
 layers = 1
 material_override = null
 cast_shadow = 1
@@ -82,10 +81,10 @@ mesh = ExtResource( 1 )
 skeleton = NodePath("..")
 material/0 = SubResource( 1 )
 material/1 = null
-_sections_unfolded = [ "Geometry", "Transform", "material" ]
+_sections_unfolded = [ "material" ]
 
 [node name="Area" type="Area" parent="MeshInstance" index="0" groups=[
-"box_blue",
+"box_yellow",
 ]]
 
 input_ray_pickable = false

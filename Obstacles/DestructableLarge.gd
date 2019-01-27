@@ -16,6 +16,4 @@ func _process(delta):
 		
 
 func on_area_entered(object):
-	var groups = object.get_groups()
-	if object.is_in_group("bullets"):
-		hp = hp - object.damage
+	pass

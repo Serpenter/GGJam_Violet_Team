@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assests/boxes/new_box.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://assests/boxes/box_violet-01.jpg" type="Texture" id=2]
-[ext_resource path="res://Collectibles/CollectableBoxArea.gd" type="Script" id=3]
+[ext_resource path="res://Collectibles/CollectableViolet.gd" type="Script" id=3]
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -63,6 +63,9 @@ extents = Vector3( 0.325363, 0.324945, 0.127663 )
 
 [node name="Spatial" type="Spatial"]
 
+transform = Transform( -3, 0, -4.52987e-007, 0, 3, 0, 4.52987e-007, 0, -3, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
 [node name="MeshInstance" type="MeshInstance" parent="." index="0"]
 
 layers = 1
@@ -105,6 +108,7 @@ reverb_bus_name = "Master"
 reverb_bus_amount = 0.0
 reverb_bus_uniformity = 0.0
 script = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance/Area" index="0"]
 
