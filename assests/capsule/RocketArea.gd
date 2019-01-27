@@ -3,14 +3,18 @@ extends Area
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+var is_player_1_hide = false
+var is_player_2_hide = false
 
-var needed_elements = ["fuel", "machinery", "chip", "nut", "screwdriver", "ducktape"]
+var needed_elements = ["fuel"]#, "machinery", "chip", "nut", "screwdriver", "ducktape"]
 
 var launch_counter = 0
 
-var max_counter = 3
+var max_counter = 1
 
 var is_ready = false
+onready var particles = get_node("../Particles")
+onready var anim = get_node("../../AnimationPlayer")
 
 func _ready():
 	self.connect("area_entered",self,"on_area_entered")
@@ -52,5 +56,15 @@ func on_area_entered(object):
 			launch_counter = 0
 				
 			if needed_elements.empty():
+				
+				if(object.is_in_group("Player1")):
+					is_player_1_hide = true
+				elif(object.is_in_group("Player2")):
+					is_player_2_hide = true
 				is_ready = true
-				get_tree().change_scene("res://intro/IntroScene.tscn")
+				anim.play("Fly")
+				particles.set_emitting(true)
+				
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	get_tree().change_scene("res://main_menu/SimpleMainMenu.tscn")

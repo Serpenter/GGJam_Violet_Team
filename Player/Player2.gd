@@ -7,6 +7,7 @@ var starting_position = Vector3(0.0, 0.0, 20.0)
 var face_direction
 
 var item_drop_distance = 1.2
+onready var rocket = get_node("/root/MainNode/Rocket/Rocket")
 
 var LAZOR_BULLET = preload("res://Bullet/LazorBullet.tscn")
 
@@ -25,6 +26,8 @@ func _ready():
 
 func _process(delta):
 	
+	if(rocket.get_player_2_hide()):
+		visible = false
 	var spatial_node = get_node("Spatial")
 	if spatial_node.state == spatial_node.STATE.FAINT:
 		return
