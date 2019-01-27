@@ -7,7 +7,9 @@ var ACCELERATING_O2_CHANGING_RATE = 0.5
 var NORMAL_O2_CHANGING_RATE = 0.2
 var level_o2_changing_rate = 0.0
 var not_moving = true
+var is_unfaint_started = true
 var state = STATE.NORMAL
+onready var anim = get_node("../AnimationPlayer") 
 
 var timer_o2 = Timer.new()
 var timer_acceleration = Timer.new()
@@ -32,17 +34,24 @@ func _ready():
 	add_child(timer_acceleration)
 	level_o2 = START_LVL_O2
 	level_o2_changing_rate = NORMAL_O2_CHANGING_RATE
-
+	anim.play("Idle")
+	
 
 func _process(delta):
 	if level_o2 <= 0.0:
 		set_state(STATE.FAINT)
+		is_unfaint_started = false
+		anim.play("Faint")
+		
 
 	if level_o2 < START_LVL_O2 and (not_moving or state == STATE.FAINT):
 		level_o2 += level_o2_changing_rate
 		if level_o2 >= START_LVL_O2:
 			level_o2 = START_LVL_O2
 			set_state(STATE.NORMAL)
+			if(!is_unfaint_started):
+				is_unfaint_started = true
+				anim.play("Unfaint")
 
 
 func _input(event):
@@ -59,10 +68,15 @@ func _input(event):
 		level_o2_changing_rate = ACCELERATING_O2_CHANGING_RATE
 		timer_acceleration.start()
 
-
 func _on_timer_o2_timeout():
 	not_moving = true
 
 func _on_timer_acceleration_timeout():
 	level_o2_changing_rate = NORMAL_O2_CHANGING_RATE
 	get_parent().speed = get_parent().INITIAL_SPEED
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if(anim_name == "Unfaint"):
+		anim.play("Idle")
+	if(not_moving and anim_name == "Idle"):
+		anim.play(anim_name)
