@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/collectable_tool.obj-c5327cba39d080a314b745fc38519691.mesh"
+
+[deps]
+
+files=[ "res://.import/collectable_tool.obj-c5327cba39d080a314b745fc38519691.mesh" ]
+
+source_file="res://collectable_tool.obj"
+dest_files=[ "res://.import/collectable_tool.obj-c5327cba39d080a314b745fc38519691.mesh", "res://.import/collectable_tool.obj-c5327cba39d080a314b745fc38519691.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

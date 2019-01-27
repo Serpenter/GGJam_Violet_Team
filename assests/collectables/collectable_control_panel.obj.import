@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/collectable_control_panel.obj-024f94cc25e35045df59b5d3f440c796.mesh"
+
+[deps]
+
+files=[ "res://.import/collectable_control_panel.obj-024f94cc25e35045df59b5d3f440c796.mesh" ]
+
+source_file="res://collectable_control_panel.obj"
+dest_files=[ "res://.import/collectable_control_panel.obj-024f94cc25e35045df59b5d3f440c796.mesh", "res://.import/collectable_control_panel.obj-024f94cc25e35045df59b5d3f440c796.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/collectable_scheme.obj-c663a3319d76306fa4d79e2d3514b1f3.mesh"
+
+[deps]
+
+files=[ "res://.import/collectable_scheme.obj-c663a3319d76306fa4d79e2d3514b1f3.mesh" ]
+
+source_file="res://collectable_scheme.obj"
+dest_files=[ "res://.import/collectable_scheme.obj-c663a3319d76306fa4d79e2d3514b1f3.mesh", "res://.import/collectable_scheme.obj-c663a3319d76306fa4d79e2d3514b1f3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

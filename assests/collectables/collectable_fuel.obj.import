@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/collectable_fuel.obj-216a4c00822c76691f43e876774c4b6d.mesh"
+
+[deps]
+
+files=[ "res://.import/collectable_fuel.obj-216a4c00822c76691f43e876774c4b6d.mesh" ]
+
+source_file="res://collectable_fuel.obj"
+dest_files=[ "res://.import/collectable_fuel.obj-216a4c00822c76691f43e876774c4b6d.mesh", "res://.import/collectable_fuel.obj-216a4c00822c76691f43e876774c4b6d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
