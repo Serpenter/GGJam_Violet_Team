@@ -3,6 +3,7 @@ extends KinematicBody
 var INITIAL_SPEED = 5.0
 var speed = 0.0
 var starting_position = Vector3(0.0, 0.0, 20.0)
+onready var main_node_instance = get_node("/root/MainNode")
 
 var face_direction
 
@@ -15,6 +16,11 @@ func _ready():
 	face_direction = Vector3(0.0, 0.0, -1.0)
 
 func _process(delta):
+	
+	if main_node_instance.is_game_over:
+		if Input.is_action_pressed("ui_cancel"):
+			get_tree().change_scene("res://main_menu/MainMenu.tscn")
+		return
 	
 	var spatial_node = get_node("Spatial")
 	if spatial_node.state == spatial_node.STATE.FAINT:
